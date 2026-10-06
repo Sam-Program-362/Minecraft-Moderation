@@ -1,0 +1,32 @@
+my-bedrock-project/
+├── .vscode/
+│   └── settings.json
+├── packs/
+│   ├── BP/
+│   │   ├── manifest.json
+│   │   ├── pack_icon.png
+│   │   ├── blocks/
+│   │   ├── entities/
+│   │   ├── items/
+│   │   ├── recipes/
+│   │   └── loot_tables/
+│   └── RP/
+│       ├── manifest.json
+│       ├── pack_icon.png
+│       ├── attachables/
+│       ├── entity/
+│       ├── models/entity/
+│       ├── render_controllers/
+│       ├── textures/
+│       │   ├── item_texture.json
+│       │   └── terrain_texture.json
+│       └── font/
+│           └── glyphs/
+├── src/
+│   ├── index.ts
+│   ├── mechanics/
+│   ├── systems/
+│   └── utils/
+├── package.json
+├── tsconfig.json
+└── esbuild.config.mjs

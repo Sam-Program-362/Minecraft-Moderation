@@ -1,0 +1,16 @@
+1. Declarative Component System (JSON)
+• Entities: Controlled via component groups and events. Adding/removing a component group changes behaviors at runtime (e.g., swapping attack targets, changing movement speed, scaling).
+• Blocks: Data-driven blocks support collision boxes, selection boxes, geometry, light emission, and permutations. Custom block permutations allow states (e.g., facing_direction, is_active).
+• Items: Support food values, durability, tool speeds, and custom components registered through scripts
+
+2. Molang (Mojang Language)
+• Molang is an inline mathematical expression engine evaluated on client frames and animation ticks. It computes visual logic with zero server-tick lag.
+• Syntax: (query.is_sneaking ? math.sin(query.life_time * 20) : 0)
+• Key Queries: q.is_moving, q.health, q.distance_from_camera, q.property('custom:state').
+• Scope: Run within render controllers, animations, animation controllers, and entity state transitions.
+
+3. Script API (@minecraft/server)
+• A full JavaScript runtime running on Bedrock's server thread. It provides access to:
+• Events: world.beforeEvents (can be cancelled, runs before state commits) and world.afterEvents (runs after the state change).
+• Tick Scheduling: system.runInterval(fn, ticks) and system.runTimeout(fn, ticks) replacing command blocks.
+• Storage: Dynamic properties allow storing key-value pairs (strings, numbers, booleans, Vector3) on entities or the world itself, acting as custom NBT.

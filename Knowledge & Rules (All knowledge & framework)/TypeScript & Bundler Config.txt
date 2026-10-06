@@ -1,0 +1,2 @@
+npm init -y
+npm i -D @minecraft/server @minecraft/server-ui typescript esbuild
