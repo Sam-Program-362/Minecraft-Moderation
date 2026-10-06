@@ -1,0 +1,21 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "v1.0.5 by @§eItzriyo157\n§7Hide or change your crosshair depending on context.",
+    "name": "Dynamic Crosshair",
+    "uuid": "a09090a0-91ca-bcac-a336-15715215a157",
+    "version": [ 1, 0, 5 ],
+    "min_engine_version": [ 1, 21, 100 ]
+  },
+  "modules": [
+    {
+      "description": "v1.0.5 by @Itzriyo157",
+      "type": "resources",
+      "uuid": "a17a9090-9a91-bccc-0cc2-1c3a27157a57",
+      "version": [ 1, 0, 5 ]
+    }
+  ],
+  "metadata": {
+    "authors": [ "itzriyo157" ]
+  }
+}
