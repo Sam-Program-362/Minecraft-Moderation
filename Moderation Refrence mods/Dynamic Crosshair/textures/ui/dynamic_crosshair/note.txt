@@ -1,0 +1,1 @@
+for "eat" crosshair texture is also used when the player is looking at mineable block and not holding any item.
